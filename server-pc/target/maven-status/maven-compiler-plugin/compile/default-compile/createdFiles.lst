@@ -1,0 +1,6 @@
+com\audiorouter\VBCableInstaller.class
+com\audiorouter\App.class
+com\audiorouter\UdpReceiver.class
+com\audiorouter\AudioDeviceManager.class
+com\audiorouter\AudioConfig.class
+com\audiorouter\AudioPlayer.class
