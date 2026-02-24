@@ -1,0 +1,6 @@
+*.class
+*.log
+*.jar
+.idea/
+build/
+out/
