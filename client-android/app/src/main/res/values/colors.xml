@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-</resources>
+    <color name="wine_background">#120008</color> <color name="wine_primary">#330016</color> <color name="wine_accent">#780034</color> <color name="wine_surface">#1A0008</color> <color name="text_light">#FFFFFF</color>
+    <color name="text_muted">#FF99BB</color> <color name="status_transmitting">#3FB950</color> <color name="status_disconnected">#FF99BB</color> </resources>

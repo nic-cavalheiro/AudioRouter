@@ -11,6 +11,7 @@ public class UdpSender {
     private final int port;
 
     public UdpSender(String ip, int port) throws Exception {
+        Log.i("AudioRouter_Flow", "Sender (enviando...): Socket configurado para " + ip + ":" + port);
         this.port = port;
         this.destinationAddress = InetAddress.getByName(ip);
         this.socket = new DatagramSocket(); // Porta local aleatória
@@ -22,10 +23,10 @@ public class UdpSender {
             if (socket != null && !socket.isClosed()) {
                 DatagramPacket packet = new DatagramPacket(data, length, destinationAddress, port);
                 socket.send(packet);
+                Log.d("UDP_DEBUG", "Pacote enviado para " + destinationAddress.getHostAddress() + ":" + port);
             }
         } catch (Exception e) {
-            // Em app de áudio real, evitamos logar a cada erro de pacote para não travar a thread
-            // Log.e("UdpSender", "Falha no envio", e);
+            Log.e("UDP_DEBUG", "ERRO AO ENVIAR: " + e.getMessage());
         }
     }
 
